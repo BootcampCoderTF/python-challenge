@@ -123,5 +123,5 @@ with open(output_file_path, 'w') as file:
     # Write the results to the file
     file.write(results)
 
-# Print Confirmation into the terminal
+# Print confirmation into the terminal
 print(f"Results have been saved to {output_file_path}")

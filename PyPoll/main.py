@@ -71,21 +71,21 @@ most_common_value = max(value_counts, key=value_counts.get)
 target_value_a = "Charles Casper Stockham"
 # Use the count() method to count the occurrences of the target value
 count_a = candidate.count(target_value_a)
-# Calculate the percentage
+# Calculate the percentage target value
 percentage_a = (count_a / total_rows) * 100
 
 # Value of the second candidate
 target_value_b = "Diana DeGette"
 # Use the count() method to count the occurrences of the target value
 count_b = candidate.count(target_value_b)
-# Calculate the percentage
+# Calculate the percentage target value
 percentage_b = (count_b / total_rows) * 100
 
 # Value of the third candidate
 target_value_c = "Raymon Anthony Doane"
 # Use the count() method to count the occurrences of the target value
 count_c = candidate.count(target_value_c)
-# Calculate the percentage
+# Calculate the percentage target value
 percentage_c = (count_c / total_rows) * 100
 
 
@@ -101,7 +101,7 @@ print(f"Candidate with the most votes is: {most_common_value} ")
 # --------------------WRITE THE RESULTS------------------------
 # -------------------------------------------------------------
 
-# Your Python code to generate results
+# Values to write into the results file
 results = "Election Results \n \n"
 results += "---------------------------- \n \n"
 results += f"Total votes: {total_rows} \n \n"
@@ -120,5 +120,5 @@ with open(output_file_path, 'w') as file:
     # Write the results to the file
     file.write(results)
 
-# Print Confirmation into the terminal
+# Print confirmation into the terminal
 print(f"Results have been saved to {output_file_path}")
